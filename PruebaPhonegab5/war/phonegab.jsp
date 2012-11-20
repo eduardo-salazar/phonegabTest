@@ -13,7 +13,9 @@
 	<ul>
 		<%
 			ConexionGoogle con=new ConexionGoogle();
+			String mensaje="Si sale esto es porque se compilo codigo java";
 			List<Contacto> list=con.getContactos();
+			<% <p> %> mensaje <% </p> %>
 			for(Contacto e:list)
 			{%>
 			<li>Nombre:<%= e.getNombre() %></li>
